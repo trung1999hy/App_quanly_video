@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Vault Pro</string>
+    <string name="title_setting">Settings</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="title_sound">Sound</string>
+    <string name="title_image">Image</string>
+    <string name="title_all_media">All media</string>
+    <string name="title_video">Videos</string>
+    <string name="title_media_vault">Valut</string>
+    <string name="title_delete_media">Remove</string>
+    <string name="content_remove_media">Are you sure you want to delete?</string>
+    <string name="title_ok">ok</string>
+    <string name="title_permission_manage_all_files">Permission to manage all files on one storage device</string>
+    <string name="title_requets_permiss_manage_all_files">The application needs permission to manage all files on one storage device</string>
+    <string name="title_memory_access_rights">Permission to manage all files on one storage device</string>
+    <string name="title_permission_store">The application needs permission to manage all files on one storage device</string>
+    <string name="title_add_media_to_vault">Add</string>
+    <string name="content_add_sound">Are you sure to add sound for protection?</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="title_confirm">Confrim</string>
+    <string name="titile_restore">Restore files</string>
+    <string name="content_restore">You restore the file means the file is not protected?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_purchase_one">%S</string>
+</resources>

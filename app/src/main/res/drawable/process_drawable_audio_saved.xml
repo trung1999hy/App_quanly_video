@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"> <!--background of seekbar-->
+        <shape>
+            <corners android:radius="5dip" />
+            <solid android:color="#DCDCDC" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress"> <!--progress color-->
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient android:startColor="#68DAF1"
+                    android:endColor="#065E70"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/secondaryProgress"> <!--secondaryProgress color-->
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient android:startColor="#68DAF1"
+                    android:endColor="#065E70"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

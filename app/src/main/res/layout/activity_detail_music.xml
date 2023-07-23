@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    android:orientation="vertical"
+   >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Audio">
+
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_14dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_6dp"
+            android:src="@drawable/ic_trash" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14dp"
+        android:layout_marginEnd="@dimen/_14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/shapeBarLayout14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar3">
+
+        <View
+            android:layout_width="332dp"
+            android:layout_height="332dp" />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titleArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/_16sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shapeBarLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="@dimen/_12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rlPlayMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_31dp"
+            android:elevation="@dimen/_12dp">
+
+            <ImageView
+                android:id="@+id/ivTogetherMedia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_play_or_pause"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:id="@+id/tvProcessTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_toEndOf="@+id/ivTogetherMedia"
+                android:gravity="center_vertical|end"
+                android:minWidth="45dp"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12dp" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12dp" />
+
+            <SeekBar
+                android:id="@+id/seekbarMedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/tvEndTime"
+                android:layout_toEndOf="@+id/tvProcessTime"
+                android:background="@color/transparent"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progressDrawable="@drawable/process_drawable_audio_saved"
+                android:thumb="@drawable/custom_thumb_violet_seekbar" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

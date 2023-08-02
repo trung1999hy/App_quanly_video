@@ -96,6 +96,8 @@ public class PurchaseInAppAdapter extends RecyclerView.Adapter<PurchaseInAppAdap
                 return String.format(context.getResources().getString(R.string.message_purchase_one), price + "/300 coin");
             case Constant.KEY_500_COIN:
                 return String.format(context.getResources().getString(R.string.message_purchase_one), price + "/500 coin");
+            case Constant.KEY_600_COIN:
+                return String.format(context.getResources().getString(R.string.message_purchase_one), price + "/700 coin");
 
             default:
                 return String.format(context.getResources().getString(R.string.message_purchase_one), "/0 coin");

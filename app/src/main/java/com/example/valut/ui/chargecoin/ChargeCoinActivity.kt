@@ -150,6 +150,10 @@ class ChargeCoinActivity : AppCompatActivity(), PurchaseInAppAdapter.OnClickList
             QueryProductDetailsParams.Product.newBuilder()
                 .setProductId(Constant.KEY_500_COIN)
                 .setProductType(BillingClient.ProductType.INAPP)
+                .build(),
+            QueryProductDetailsParams.Product.newBuilder()
+                .setProductId(Constant.KEY_600_COIN)
+                .setProductType(BillingClient.ProductType.INAPP)
                 .build()
         )
 
@@ -226,12 +230,13 @@ class ChargeCoinActivity : AppCompatActivity(), PurchaseInAppAdapter.OnClickList
     private fun getCoinFromKey(coinId: String): Int {
         return when (coinId) {
             Constant.KEY_5_COIN -> 5
-            Constant.KEY_15_COIN -> 15
+            Constant.KEY_15_COIN -> 5
             Constant.KEY_30_COIN -> 30
             Constant.KEY_100_COIN -> 100
             Constant.KEY_200_COIN -> 200
             Constant.KEY_300_COIN -> 300
             Constant.KEY_500_COIN -> 500
+            Constant.KEY_600_COIN -> 700
             else -> 0
         }
     }

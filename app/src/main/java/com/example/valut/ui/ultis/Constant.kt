@@ -37,5 +37,9 @@ object Constant {
 
     const val KEY_500_COIN = "key_in_app_500_coin" // 999 coin
 
+    const val KEY_600_COIN = "key_in_app_600_coin" // 999 coin
+
+
+
 
 }
